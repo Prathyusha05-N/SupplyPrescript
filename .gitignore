@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+
+# Raw datasets
+Module 1/data/raw/
+
+# Generated datasets
+Module 1/data/cleaned/
+
+# VS Code
+.vscode/
