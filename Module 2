@@ -1,0 +1,5 @@
+Objective
+
+Answer "What will happen?" — predict whether a shipment will be delayed, 
+and if so, estimate how long the delay will be. 
+This feeds directly into Module 3's optimization engine.
