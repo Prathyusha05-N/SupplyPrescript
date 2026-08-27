@@ -3,3 +3,11 @@ Objective
 Answer "What will happen?" — predict whether a shipment will be delayed, 
 and if so, estimate how long the delay will be. 
 This feeds directly into Module 3's optimization engine.
+
+Module2_Part1_Data_Preprocessing.ipynb
+Commit message: Add data preprocessing — load Module 1 data, sanity checks, encoding pipeline
+Description: Loads the train/test data and both targets from Module 1, 
+checks for missing values and target balance, and builds 
+a leakage-safe preprocessing pipeline (frequency encoding for high-cardinality columns, 
+one-hot encoding for the rest). 
+
