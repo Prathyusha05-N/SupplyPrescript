@@ -11,3 +11,10 @@ checks for missing values and target balance, and builds
 a leakage-safe preprocessing pipeline (frequency encoding for high-cardinality columns, 
 one-hot encoding for the rest). 
 
+Module2_Part2_Classification_Model.ipynb
+Commit message: Add classification model — predict late_delivery_risk (XGBoost vs LightGBM)
+Description: Trains and compares XGBoost and LightGBM classifiers to predict whether 
+a shipment will be delayed. Evaluates with accuracy, precision, recall, F1, ROC-AUC, 
+confusion matrix, feature importance, and 5-fold cross-validation. 
+Saves the best model (XGBoost, ROC-AUC 0.849).
+
