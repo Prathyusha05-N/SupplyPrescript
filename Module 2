@@ -18,8 +18,15 @@ a shipment will be delayed. Evaluates with accuracy, precision, recall, F1, ROC-
 confusion matrix, feature importance, and 5-fold cross-validation. 
 Saves the best model (XGBoost, ROC-AUC 0.849).
 
+
 Module2_Part3_Regression_Model.ipynb
 Commit message: Add regression model — predict delay_duration_days (XGBoost vs LightGBM)
 Description: Trains and compares XGBoost and LightGBM regressors to predict expected delay 
 length in days. Evaluates with MAE, RMSE, R², predicted-vs-actual plots, feature importance, 
 and 5-fold cross-validation. Saves the best model (XGBoost, MAE 0.663).
+
+Module2_Part4_Module3_Handoff.ipynb
+Commit message: Add Module 3 handoff — combine predictions into module3_input_predictions.csv
+Description: Loads both trained models, reproduces the preprocessing pipeline on the test set, 
+generates delay probability and expected delay duration for every shipment, and combines 
+these with cost/timing/business columns into the file Module 3 needs for its optimization engine.
