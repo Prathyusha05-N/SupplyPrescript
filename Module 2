@@ -18,3 +18,8 @@ a shipment will be delayed. Evaluates with accuracy, precision, recall, F1, ROC-
 confusion matrix, feature importance, and 5-fold cross-validation. 
 Saves the best model (XGBoost, ROC-AUC 0.849).
 
+Module2_Part3_Regression_Model.ipynb
+Commit message: Add regression model — predict delay_duration_days (XGBoost vs LightGBM)
+Description: Trains and compares XGBoost and LightGBM regressors to predict expected delay 
+length in days. Evaluates with MAE, RMSE, R², predicted-vs-actual plots, feature importance, 
+and 5-fold cross-validation. Saves the best model (XGBoost, MAE 0.663).
