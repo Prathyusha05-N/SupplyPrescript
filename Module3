@@ -1,1 +1,123 @@
+----The complete project connection
 
+Your project then becomes:
+
+                 DATASET
+                    │
+                    ▼
+        ┌─────────────────────┐
+        │      MODULE 1       │
+        │ Data Preprocessing  │
+        │ Feature Engineering │
+        └──────────┬──────────┘
+                   │
+                   │ CSV
+                   ▼
+supply_chain_feature_engineered.csv
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │      MODULE 2       │
+        │ Predictive Analytics│
+        │                     │
+        │ Classification      │
+        │ Regression          │
+        └──────────┬──────────┘
+                   │
+                   │ CSV
+                   ▼
+           prediction_output.csv
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │      MODULE 3       │
+        │ Prescriptive Engine │
+        │                     │
+        │ PuLP Optimization   │
+        │ Constraints         │
+        │ Alternatives        │
+        │ Ranking             │
+        └──────────┬──────────┘
+                   │
+                   ▼
+        final_recommendation.csv
+                   │
+                   ▼
+        ┌─────────────────────┐
+        │ Streamlit Dashboard │
+        └─────────────────────
+
+
+====Module 1 output
+       ↓
+Module 2 reads it
+       ↓
+Module 2 creates predictions
+       ↓
+Module 3 reads predictions
+       ↓
+Module 3 optimizes
+
+////SupplyPrescript/
+│
+├── Module 1/
+│   └── data/
+│       └── processed/
+│           └── supply_chain_feature_engineered.csv
+│
+├── Module 2/
+│
+└── Module 3/
+    └── prescriptive_optimization.py
+
+
+
+
+-------Shipment ID
+       ↓
+Delay Probability
+       ↓
+Expected Delay
+
+////Delay Probability
+Expected Delay
+Shipment quantity
+Shipment value
+Deadline
+Budget
+Inventory
+Capacity
+       ↓
+Optimization Engine
+       ↓
+Alternative Actions
+       ↓
+Ranked Recommendations
+
+////Historical Data
+      ↓
+Module 1
+Data Preparation
+      ↓
+Module 2
+Predictive Model
+      ↓
+87% Delay Probability
+14 Days Expected Delay
+      ↓
+Module 3
+Optimization
+      ↓
+┌──────────────────────┐
+│ Air Freight          │
+│ Secondary Supplier   │
+│ Delay Launch         │
+└──────────────────────┘
+      ↓
+Constraint Checking
+      ↓
+Cost Calculation
+      ↓
+Ranking
+      ↓
+Best Recommendation
